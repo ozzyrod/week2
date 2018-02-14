@@ -51,13 +51,57 @@ public class Main {
 		 * Relational operators ">", ">=", "<", "<=", "!=", and "==" for a total of 6 relational operators.
 		 */
 		if ( remainder == 1 ) {
+
 			System.out.println( "The number is odd." );
 			System.out.println( "Thanks!" );
+
 		} else {
+
 			System.out.println( "The number is even." );
 			System.out.println( "Cool!" );
+
 		}
 
-		System.out.print( "That's all folks!" );
+		System.out.println( "That's all folks!" );
+
+		/*
+		 * Write a program that now gets a floating point number from the user that
+		 * represents a grade and then prints out if the grade is an A, B, C, D, or F
+		 *
+		 * A = 100 - 85.0
+		 * B = 84.9 - 70
+		 * C = 69.9 - 60
+		 * D = 59.9 - 50
+		 * F is less than 50
+		 */
+		double grade;
+
+		/*
+		 * Get the first user variable.
+		 */
+		System.out.print( "Enter a number grade: " );
+		grade = input.nextDouble();
+
+		if ( grade >= 85 ) {
+
+			System.out.println( "You got an A" );
+
+		} else if ( grade >= 70 ) {
+
+			System.out.println( "You got a B" );
+
+		} else if ( grade >= 60 ) {
+
+			System.out.print( "You got a C" );
+
+		} else if ( grade >= 50 ) {
+
+			System.out.print( "You got a D" );
+
+		} else {
+
+			System.out.print( "You got an F" );
+
+		}
     }
 }
