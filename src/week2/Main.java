@@ -44,14 +44,20 @@ public class Main {
 		remainder = userVar1 % 2;
 
 		/*
-		 * In general, an expreesion that follows the "if" when coded properly will only result in a value of true
+		 * In general, an expression that follows the "if" when coded properly will only result in a value of true
 		 * or false.
 		 * This is called a "conditional expression".
+		 *
+		 * Relational operators ">", ">=", "<", "<=", "!=", and "==" for a total of 6 relational operators.
 		 */
-		if ( 0 == remainder ) { // When comparing two values, use '=='
-			System.out.print( "The number is even." );
+		if ( 1 == remainder ) {
+			System.out.println( "The number is odd." );
+			System.out.println( "Thanks!" );
 		} else {
-			System.out.print( "The number is odd." );
+			System.out.println( "The number is even." );
+			System.out.println( "Cool!" );
 		}
+
+		System.out.print( "That's all folks!" );
     }
 }
