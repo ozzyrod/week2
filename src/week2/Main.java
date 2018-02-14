@@ -50,7 +50,7 @@ public class Main {
 		 *
 		 * Relational operators ">", ">=", "<", "<=", "!=", and "==" for a total of 6 relational operators.
 		 */
-		if ( 1 == remainder ) {
+		if ( remainder == 1 ) {
 			System.out.println( "The number is odd." );
 			System.out.println( "Thanks!" );
 		} else {
