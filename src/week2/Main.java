@@ -12,7 +12,7 @@ package week2;
 import java.util.Scanner;
 
 /**
- * Define class Week1_exercise.
+ * Define class Main.
  */
 public class Main {
 
@@ -92,16 +92,81 @@ public class Main {
 
 		} else if ( grade >= 60 ) {
 
-			System.out.print( "You got a C" );
+			System.out.println( "You got a C" );
 
 		} else if ( grade >= 50 ) {
 
-			System.out.print( "You got a D" );
+			System.out.println( "You got a D" );
 
 		} else {
 
-			System.out.print( "You got an F" );
+			System.out.println( "You got an F" );
 
 		}
-    }
+
+		/*
+		 * Version 1.1: Modify the program to repeat asking for grades until
+		 * the user says no more to enter.
+		 *
+		 * "No More" means after asking for a grade, we ask the user to enter 0
+		 * if they want to stop.
+		 */
+		double grade2;
+		int continueNumber = 1;
+
+		while ( continueNumber != 0 ) {
+
+			/*
+			 * Get the first user variable.
+			 */
+			System.out.print( "Enter a number grade: " );
+			grade2 = input.nextDouble();
+
+			if ( grade2 >= 85 ) {
+
+				System.out.println( "You got an A" );
+
+			} else if ( grade2 >= 70 ) {
+
+				System.out.println( "You got a B" );
+
+			} else if ( grade2 >= 60 ) {
+
+				System.out.println( "You got a C" );
+
+			} else if ( grade2 >= 50 ) {
+
+				System.out.println( "You got a D" );
+
+			} else {
+
+				System.out.println( "You got an F" );
+
+			}
+
+			System.out.println( "Would you like to continue?" );
+			System.out.print( "Enter 0 for no and any other number to continue: " );
+			continueNumber = input.nextInt();
+		}
+	}
+
+	/*
+	 * Exercise 2:
+	 * Write a program that repeats asking the user for positive numbers and keeps track of
+	 * the smallest and the largest numbers entered.
+	 *
+	 * The repetition stops when the user enters a -1.
+	 * At that point, the program finishes by saying which number was largest and which was
+	 * smallest.
+	 *
+	 * For example: if the user entered
+	 * 5
+	 * 2
+	 * 12
+	 * 7
+	 * 3
+	 * -1
+	 *
+	 * The program would finish by saying the largest number is 12 and the smallest number is 2.
+	 */
 }
